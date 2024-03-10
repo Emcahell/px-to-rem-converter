@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #302e2e;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 600px;
+}
+
+.widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-family: sans-serif;
+    font-size: 47px;
+    color: rgb(255, 255, 255);
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.container-px,
+.container-rem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: antiquewhite;
+}
+
+.i{
+    position: relative;
+    top: 20px;
+    width: 17px;
+    height: 17px;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+input{
+    width: 400px;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+    outline: none;
+    font-family: sans-serif;
+    color: white;
+    background: none;
+    border: solid 2px rgba(255, 255, 255, 0.233);
+}
+#inputREM{
+    color: rgb(0, 147, 233);
+}
+/* Quitar botones de incremento y decremento del input => */
+input::-webkit-inner-spin-button, ::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input{
+    -moz-appearance: textfield;
+}
+/* ------------------------------------------------------------- */
