@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Converter Pixel To REM</title>
+    <title>Pixel To REM converter</title>
     <!-- Link CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-querys.css">
     <!-- Iconos -->
-    <script src="/icons/all.min.js"></script>
+    <script src="./icons/all.min.js"></script>
 </head>
 <body>
     <section class="container">
@@ -17,15 +18,16 @@
             <article class="inputs">
                 <div class="container-px">
                     <label>Pixel</label>
-                    <input type="number" id="inputPixel" min="0">
+                    <input type="number" id="inputPixel" oninput="convertToRem(this.value)">
                 </div>
                 <i class="i fa-solid fa-right-left"></i>
                 <div class="container-rem">
                     <label>REM</label>
-                    <input type="number" id="inputREM" min="0" step="0.1">
+                    <input type="number" id="inputRem" oninput="convertToPixel(this.value)">
                 </div>
             </article>
         </div>
     </section>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
